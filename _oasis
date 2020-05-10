@@ -1,0 +1,17 @@
+Name: stingray
+Version: 0.1
+Synopsis: A tiny c compiler
+Authors: Gregory Weiss
+License: MIT
+
+Description: A simple compiler for a subset of c
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Executable "stingray"
+  Path: src
+  MainIs: stingray.ml
+  BuildDepends:
+    str
